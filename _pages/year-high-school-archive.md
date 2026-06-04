@@ -1,7 +1,7 @@
 ---
 title: "High School Posts"
 permalink: /hs/
-layout: posts
+layout: archive
 author_profile: true
 ---
 
