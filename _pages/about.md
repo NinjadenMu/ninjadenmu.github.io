@@ -3,6 +3,6 @@ permalink: /about/
 title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+Hi 👋, I'm Jaden.  I enjoy writing scalable, fast, and correct code, and getting computers to produce intelligent behavior (both through deep learning and GOFAI).  My recent projects include a machine learning compiler for lowering PyTorch to optimized machine code and a chess engine for the TI-84 Plus CE calculator.  I write most of my code in C, Python, and C++, although I've recently found some appreciation for Rust and functional programming.  Some of my other interests include chess (both when played by humans and by computers), tennis, cello, and flying drones as a licensed drone pilot.  
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+The best way to reach me is my email jaden.mu[at]gmail[dot]com.
