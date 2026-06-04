@@ -5,6 +5,6 @@ layout: archive
 author_profile: true
 ---
 
-{% for post in site.categories['blog'] %}
+{% for post in site.categories['high-school'] %}
   {% include archive-single.html %}
 {% endfor %}
