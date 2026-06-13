@@ -57,17 +57,17 @@ Now, to enumerate all polycubes composed of $$n$$ cubes, I start with enumeratin
 
 Naively, we could compute a hash for all 6 orientations, and compare future polycubes with all 6 to check for duplicates.  However, this requres $$36\times$$ more computation than necessary.  Instead, we compute a singular "canonical form" of a polycube, which is the polycube where the lowest cube is at (0, 0, 0), and the list is sorted in lexicographical order.  Then, only this canonical form is added to the duplicate-checking set, and only the canonical form is used to check for duplicates.  Because the way of computing the canonical form is standardized for all polycubes, checking for duplicates this way is perfectly legitimate.
 
-With this program, I can enumerate all polycubes up to and including $$n=8$$.  Unfortunately, this problem gets exponentially harder as n increases.  I know that researchers have enumerated polycubes up to *n=22* (using lots of fancy math and CS terms I didn't understand), but it seems like most implementations by casuals like me get to somewhere from the *n=7* to *n=9* range, so I'm reasonably happy with the performance.  Overall, this was a very simple project that only took a day, but I do think the difficulty in such an easy seeming problem is interesting.
+With this program, I can enumerate all polycubes up to and including $$n=8$$.  Unfortunately, this problem gets exponentially harder as n increases.  I know that researchers have enumerated polycubes up to $$n=22$$ (using lots of fancy math and CS terms I didn't understand), but it seems like most implementations by casuals like me get to somewhere from the *n=7* to *n=9* range, so I'm reasonably happy with the performance.  Overall, this was a very simple project that only took a day, but I do think the difficulty in such an easy seeming problem is interesting.
 
-I also learned how to use matplotlib's 3D visualization tools: for fun, here's all the possible polycubes for n=5, 6, and 7 (n=8 wouldn't fit onto my screen, but I did find all 6922 possibilities.)
+I also learned how to use matplotlib's 3-D visualization tools.  For fun, here's all the possible polycubes for $$n=5$$, $$6$$, and $$7$$ ($$n=8$$ wouldn't fit onto my screen, but I did find all 6922 possibilities.)
 
-#### $$n=5$$
+#### $$n=5$$:
 ![Polycube with n=5](/assets/images/polycubes/5.png)
 
-#### $$n=6$$
+#### $$n=6$$:
 ![Polycube with n=6](/assets/images/polycubes/6.png)
 
-#### $$n=7$$
+#### $$n=7$$:
 ![Polycube with n=7](/assets/images/polycubes/7.png)
 
 You can find the code for this project here: [https://github.com/NinjadenMu/polycubes](https://github.com/NinjadenMu/polycubes)

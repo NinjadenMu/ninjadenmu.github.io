@@ -7,7 +7,7 @@ categories:
 author: Jaden Mu
 mathjax: true
 ---
-65 million years ago, all the dinosaurs were killed by an asteroid.  The Flat-o-saurs are like the dinosaurs, but they live on a 2D planet called plane-et (which makes the math a bit cleaner in this article).  Dr. Bi-ceratops, the 2D cousin of the 3D Triceratops, has set up an asteroid detection and monitoring system to try to avoid his cousin's tragic fate.
+65 million years ago, the dinosaurs were wiped out by an asteroid.  The Flat-o-saurs are like the dinosaurs, but they live on a 2D planet called plane-et (which makes the math a bit cleaner in this article).  Dr. Bi-ceratops, the 2D cousin of the 3D Triceratops, has set up an asteroid detection and monitoring system to try to avoid his cousin's tragic fate.
 
 Oh No!  Dr. Bi-ceratops has detected an asteroid!  In this paper, I'll explain how Dr. Bi-ceratops' detection and monitoring system works, and how he can calculate the probability of the newly discovered asteroid hitting plane-et.   
 

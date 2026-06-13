@@ -1,0 +1,26 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+
+<h3 class="archive__subtitle home__section-title">Recent Posts</h3>
+<div class="entries-{{ entries_layout }}">
+  {% for post in site.posts %}
+    {% unless post.categories contains 'high-school' %}
+      {% include archive-single.html type=entries_layout %}
+    {% endunless %}
+  {% endfor %}
+</div>
+
+<h3 class="archive__subtitle home__section-title">Posts from High School</h3>
+<p class="home__section-desc">Things I wrote back in high school that I still enjoy.</p>
+<div class="entries-{{ entries_layout }}">
+  {% for post in site.posts %}
+    {% if post.categories contains 'high-school' %}
+      {% include archive-single.html type=entries_layout %}
+    {% endif %}
+  {% endfor %}
+</div>

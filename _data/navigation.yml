@@ -3,7 +3,5 @@ main:
     url: /posts/
   - title: "Categories"
     url: /categories/
-  - title: "Posts from High School"
-    url: /hs/
   - title: "About"
     url: /about/
