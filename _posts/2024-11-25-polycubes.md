@@ -1,5 +1,5 @@
 ---
-title:  "Brute Forcing the Megaron Puzzle (my teacher assigned an open math problem for homework?)"
+title:  "The Surprisingly Hard Problem of Polycube Enumeration"
 date:   2024-11-25
 categories:
   - applied-computer-science 

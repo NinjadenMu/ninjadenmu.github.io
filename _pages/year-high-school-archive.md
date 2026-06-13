@@ -1,5 +1,5 @@
 ---
-title: "High School Posts"
+title: "Posts from High School"
 permalink: /hs/
 layout: archive
 author_profile: true
