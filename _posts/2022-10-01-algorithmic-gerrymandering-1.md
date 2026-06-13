@@ -2,6 +2,7 @@
 title: "Algorithmic Gerrymandering 1 - Modelling Population and Voter Distributions"
 last_modified_at: 2022-10-01
 categories:
+  - applied-computer-science
   - high-school
 author: Jaden Mu
 mathjax: true
@@ -42,7 +43,7 @@ As for voter preference, we see a that each party has its most extreme hotspots,
 To replicate the population spikes we saw in a real population map, we'll randomly assign a few tiles to be our population centers and give them a large population.  Every other tile will start with a population of 0.  Then, we give every person in these population centers a random number of moves based on a Gaussian distribution centered around the number of moves it would take to get from the center of the grid to a corner.  Then, we let each person randomly makes moves in one of the 4 cardinal directions until it has expended all of its moves, and add one to the population of the tile it ends up on.  Because a) going far from the population center is more unlikely because it requires many moves in one direction in a row and b) most agents don't have enough moves to go very far from their starting point, most of the agents remain concentrated at the population center or in its immediate vincinity.  However, this method does give us some random noise each time, so we aren't constantly generating the same population spread.
 
 #### Assigning voter preferences
-We saw that voter preferences formed a gradient between the most extreme source points, and that the region in the middle was the most moderate.  The closer a region is to a radical hotspot, the more radical it is.  A region perfectly in between to radical areas is relatively neutral - suggesting that 2 radical regions can cancel each other out.  To replicate this, we randomly assign some tiles to be extreme areas to be maxmimally partisan (-1 or +1).  Every other tile has a voter preference of 0.  We then have each extreme tile add its voter preference divided by its distance to every other non-extreme tile.  This ensures that closer extreme tiles have more influence, and also creates the smooth gradient - a tile in the middle of 2 extreme tiles will have preference $+1/d - 1/d = 0$. 
+We saw that voter preferences formed a gradient between the most extreme source points, and that the region in the middle was the most moderate.  The closer a region is to a radical hotspot, the more radical it is.  A region perfectly in between to radical areas is relatively neutral - suggesting that 2 radical regions can cancel each other out.  To replicate this, we randomly assign some tiles to be extreme areas to be maxmimally partisan (-1 or +1).  Every other tile has a voter preference of 0.  We then have each extreme tile add its voter preference divided by its distance to every other non-extreme tile.  This ensures that closer extreme tiles have more influence, and also creates the smooth gradient - a tile in the middle of 2 extreme tiles will have preference $+\frac{1}{d} - \frac{1}{d} = 0$. 
 
 Combining these methods, we can generate a lattice model that looks like this:
 

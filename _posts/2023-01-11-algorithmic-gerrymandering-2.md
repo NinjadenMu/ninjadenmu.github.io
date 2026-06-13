@@ -2,6 +2,7 @@
 title: "Algorithmic Gerrymandering 2 - The Fun Part (Optimization)"
 last_modified_at: 2023-01-11
 categories:
+  - applied-computer-science
   - high-school
 author: Jaden Mu
 mathjax: true
